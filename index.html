@@ -81,15 +81,15 @@ function vis()
     var s3 = vf3.value;
     if (s1=="")
     {
-        vf1.value  = Math.sqrt(s3*s3-s2*s2);
+        vf1.value  = Math.sqrt(s3*s3-s2*s2).toPrecision(2);
     }
     else if (s2=="")
     {
-        vf2.value  = Math.sqrt(s3*s3-s1*s1);
+        vf2.value  = Math.sqrt(s3*s3-s1*s1).toPrecision(2);
     }
     else
     {
-        vf3.value  = Math.sqrt(s1*s1+s2*s2);
+        vf3.value  = Math.sqrt(s1*s1+s2*s2).toPrecision(2);
     }
     
 }
