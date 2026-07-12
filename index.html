@@ -33,15 +33,15 @@ h1
 <canvas id="canvas" width="60" height="40">
 </canvas>
 <p>
-    x = <input id="f1" type="text" size="10" inputmode="decimal">
+    x = <input id="f1" type="text" size="12" inputmode="decimal">
 </p>
 
 <p>
-    y = <input id="f2" type="text" size="10" inputmode="decimal">
+    y = <input id="f2" type="text" size="12" inputmode="decimal">
 </p>
 
 <p>
-    z = <input id="f3" type="text" size="10" inputmode="decimal">
+    z = <input id="f3" type="text" size="12" inputmode="decimal">
 </p>
 
 <p>
@@ -81,15 +81,15 @@ function vis()
     var s3 = vf3.value;
     if (s1=="")
     {
-        vf1.value  = Math.sqrt(s3*s3-s2*s2).toPrecision(2);
+        vf1.value  = Math.sqrt(s3*s3-s2*s2).toFixed(2);
     }
     else if (s2=="")
     {
-        vf2.value  = Math.sqrt(s3*s3-s1*s1).toPrecision(2);
+        vf2.value  = Math.sqrt(s3*s3-s1*s1).toFixed(2);
     }
     else
     {
-        vf3.value  = Math.sqrt(s1*s1+s2*s2).toPrecision(2);
+        vf3.value  = Math.sqrt(s1*s1+s2*s2).toFixed(2);
     }
     
 }
