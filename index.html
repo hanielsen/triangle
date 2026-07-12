@@ -11,18 +11,25 @@
 <link rel="apple-touch-icon" href="tk.png">
 
 <style>
-body 
+body   
 {
     font-family: sans-serif;
 }
 h1 
 {
-    font-size:1.5em;
+    font-size:1em;
     margin-bottom: 4px;
 }
 #f1, #f2, #f3
 {
     font-size:1em;
+}
+
+.center 
+{
+    display: flex;
+    align-items: center;
+    height: 40px;
 }
 </style>
 </head>
@@ -30,12 +37,13 @@ h1
 <body ontouchmove="BlockMove(event);">
 <h1>TREKANT</h1>
 
-<canvas id="canvas" width="200" height="40">
+<canvas id="canvas" width="60" height="40">
 </canvas> 
+<p>Indtast 2. Beregn 3.</p> 
 
 <p>
     x = <input id="f1" type="text" size="12" inputmode="decimal">
-</p>
+</p> 
 
 <p>
     y = <input id="f2" type="text" size="12" inputmode="decimal">
@@ -68,8 +76,8 @@ ctx.textAlign="left";
 ctx.fillText("x",20,36);
 ctx.fillText("y",36,20);
 ctx.fillText("z",15,15);
-ctx.font = "14px sans-serif";
-ctx.fillText("Indtast 2. Beregn 3.",50,20);
+//ctx.font = "14px sans-serif";
+//ctx.fillText("Indtast 2. Beregn 3.",50,20);
 
 
 function BlockMove(event) 
