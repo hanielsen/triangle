@@ -76,9 +76,9 @@ function BlockMove(event)
 
 function vis()
 {
-    var s1 = vf1.value;
-    var s2 = vf2.value;
-    var s3 = vf3.value;
+    var s1 = vf1.value.replace(",",".");
+    var s2 = vf2.value.replace(",",".");
+    var s3 = vf3.value.replace(",",".");
     if (s1=="")
     {
         vf1.value  = Math.sqrt(s3*s3-s2*s2).toFixed(2);
