@@ -30,8 +30,9 @@ h1
 <body ontouchmove="BlockMove(event);">
 <h1>TREKANT</h1>
 
-<canvas id="canvas" width="60" height="40">
-</canvas>
+<canvas id="canvas" width="200" height="40">
+</canvas> 
+
 <p>
     x = <input id="f1" type="text" size="12" inputmode="decimal">
 </p>
@@ -67,6 +68,8 @@ ctx.textAlign="left";
 ctx.fillText("x",20,36);
 ctx.fillText("y",36,20);
 ctx.fillText("z",15,15);
+ctx.font = "16px sans-serif";
+ctx.fillText("Indtast 2. Beregn 3.",50,25);
 
 
 function BlockMove(event) 
